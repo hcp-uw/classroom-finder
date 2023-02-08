@@ -17,14 +17,14 @@
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .footer a {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-grow: 1;
 }
 
@@ -40,6 +40,7 @@
 }
 
 .title {
+  color: rgba(72, 8, 91, 0.973);
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
@@ -108,7 +109,7 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -126,4 +127,7 @@
   .logo img {
     filter: invert(1);
   }
+  
 }
+
+

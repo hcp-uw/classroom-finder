@@ -20,7 +20,21 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: black;
+    background: white;
   }
+  button {
+    padding: 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color:black;
+    background: rgb(103, 78, 134);
+    font-style: bold;  
+    font-size: 30px;
+}
+  input {
+    font-size: 30px;
+  }
+
 }

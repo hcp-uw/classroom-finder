@@ -11,52 +11,40 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-           Read <Link href = "/posts/first-post"> this page!</Link>
+          Husky Classroom Finder App
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+            <h3>Find Closest Path to Building &rarr;</h3>
+            <p>Input current building and destination building.</p>
+            <form action="/send-data-here" method="post">
+              <label for="first">Building 1: </label>
+              <input type="text" id="first" name="first" />
+              <button type="submit">Submit</button>
+            </form>
           </a>
         </div>
+
+        <div className={styles.grid}>
+          <a href="https://nextjs.org/docs" className={styles.card}>
+            <h3>Find closest path to classroom &rarr;</h3>
+            <p>Input current building and destination classroom number</p>
+          </a>
+        </div>
+
+
+        <div className={styles.grid}>
+          <button>Go</button>
+        </div>
+
       </main>
 
       <footer>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          className={styles.footer}
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
+          Husky Coding Project 2023
         </a>
       </footer>
 
