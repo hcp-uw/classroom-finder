@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 export default function Home() {
   return (
@@ -16,9 +18,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="/posts/first-post" className={styles.card}>
-            <h3>Find Closest Path to Building &rarr;</h3>
-            <p>Input current building and destination building.</p>
-            <form action="/send-data-here" method="post">
+            <form action="/send-data-here" method="post" >
               <label for="first">Building 1: </label>
               <input type="text" id="first" name="first" />
               <button type="submit">Submit</button>
@@ -27,10 +27,14 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Find closest path to classroom &rarr;</h3>
-            <p>Input current building and destination classroom number</p>
+          <a className={styles.card}>
+          <form action="/send-data-here" method="post">
+              <label for="first">Building 2: </label>
+              <input type="text" id="first" name="first" />
+              <button type="submit">Submit</button>
+            </form>
           </a>
+          
         </div>
 
 
