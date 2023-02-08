@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
+          <a href="/posts/first-post" className={styles.card}>
             <h3>Find Closest Path to Building &rarr;</h3>
             <p>Input current building and destination building.</p>
             <form action="/send-data-here" method="post">
