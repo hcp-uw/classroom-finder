@@ -98,6 +98,19 @@
   color: black;
   font-size: 30px;
   background-color: rgb(132, 108, 151);
+  border-style: solid;
+  border-color: black;
+}
+
+.formboxsmall {
+  width: 50px;
+  height: 40px;  
+  color: black;
+  font-size: 30px;
+  background-color: rgb(132, 108, 151);
+  margin-right: 4px; 
+  border-style: solid;
+  border-color: black;
 }
 
 .card:hover,
