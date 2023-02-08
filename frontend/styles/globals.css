@@ -29,10 +29,10 @@ a {
     border-radius: 4px;
     cursor: pointer;
     color:black;
-    background: rgb(103, 78, 134);
+    background: rgb(86, 84, 89);
     font-style: bold;  
     font-size: 20px;
-    width: 100px;
+    height: 40px; 
 }
 
 }

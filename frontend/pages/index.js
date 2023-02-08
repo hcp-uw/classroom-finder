@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+
 
 export default function Home() {
   return (
@@ -18,9 +17,9 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="/posts/first-post" className={styles.card}>
-            <form action="/send-data-here" method="post" >
-              <label for="first">Building 1: </label>
-              <input type="text" id="first" name="first" />
+            <form action="/send-data-here" method="post" className = {styles.form} >
+              <label for="first"> Building 1: </label>
+              <input className = {styles.formbox} type="text" id="first" name="first" />
               <button type="submit">Submit</button>
             </form>
           </a>
@@ -28,9 +27,9 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a className={styles.card}>
-          <form action="/send-data-here" method="post">
-              <label for="first">Building 2: </label>
-              <input type="text" id="first" name="first" />
+          <form action="/send-data-here" method="post" className = {styles.form}>
+              <label for="second">Building 2: </label>
+              <input className = {styles.formbox} type="text" id="second" name="second" />
               <button type="submit">Submit</button>
             </form>
           </a>
