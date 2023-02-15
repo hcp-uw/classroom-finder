@@ -37,6 +37,11 @@ export default function Home() {
               <input className = {styles.formbox} type="text" id="second" name="second" />
               <button type="submit">Submit</button>
             </form>
+            <form action="/send-data-here" method="post" className = {styles.form}>
+              <label for="second">Classroom #: </label>
+              <input className = {styles.formboxsmall} type="text" id="second" name="second" />
+              <button type="submit">Submit</button>
+            </form>
           </a>
           
         </div>
