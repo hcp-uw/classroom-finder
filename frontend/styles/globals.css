@@ -27,6 +27,7 @@ a {
     padding: 7px;
     border: none;
     border-radius: 18px;
+    margin-bottom: 5px; 
     cursor: pointer;
     color:black;
     background: rgb(103, 78, 134);

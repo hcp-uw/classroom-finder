@@ -37,15 +37,15 @@ export default function Home() {
               <input className = {styles.formbox} type="text" id="second" name="second" />
               <button type="submit">Submit</button>
             </form>
-            <form action="/send-data-here" method="post" className = {styles.form}>
-              <label for="second">Classroom #: </label>
-              <input className = {styles.formboxsmall} type="text" id="second" name="second" />
-              <button type="submit">Submit</button>
-            </form>
           </a>
           
         </div>
 
+        <div className={styles.grid}>
+          <a href="/posts/first-post">
+              <button href="/posts/first-post" >Info</button>
+          </a>
+        </div>
 
         <div className={styles.grid}>
           <button>Go</button>
