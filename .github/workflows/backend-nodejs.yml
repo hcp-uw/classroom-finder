@@ -1,0 +1,43 @@
+name: Backend / Node.js
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 17
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: backend
+
+      - name: Lint
+        run: npm run lint
+        working-directory: backend
+
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 17
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: backend
+
+      - name: Format
+        run: npx rome format . --verbose
+        working-directory: backend
