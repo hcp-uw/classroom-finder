@@ -32,3 +32,9 @@ npm run lint
 npm run format
 ```
 
+## Deployment
+
+Deployed on http://render.com/
+
+https://classroom-finder-api.onrender.com
+
