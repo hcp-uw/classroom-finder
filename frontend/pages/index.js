@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
 
         <div className={styles.grid}>
-          <a href="/posts/first-post" className={styles.card}>
+          <a href="/posts/info" className={styles.card}>
             <form action="/send-data-here" method="post" className = {styles.form} >
               <label for="first"> Building 1: </label>
               <input className = {styles.formbox} type="text" id="first" name="first" />
@@ -42,8 +42,8 @@ export default function Home() {
         </div>
 
         <div className={styles.grid}>
-          <a href="/posts/first-post">
-              <button href="/posts/first-post" >Info</button>
+          <a href="/posts/info">
+              <button href="/posts/info" >Info</button>
           </a>
         </div>
 
