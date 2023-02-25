@@ -9,6 +9,8 @@
 ## How to run
 
 ```sh
+npm install
+npm build
 npm start
 ```
 
@@ -20,8 +22,6 @@ or
 curl localhost:3000
 ```
 
-You should see `Hello World!`
-
 ## Linter & Formatter
 
 ```
@@ -29,7 +29,7 @@ npm run lint
 ```
 
 ```
-npm run format
+npm run fmt
 ```
 
 ## Deployment

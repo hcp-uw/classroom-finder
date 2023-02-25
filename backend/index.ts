@@ -1,8 +1,9 @@
-const express = require("express");
-const app = express();
+import express, { Express, Request, Response } from "express";
+
+const app: Express = express();
 const port = process.env.PORT || 3000;
 
-app.get("/health", (req, res) => {
+app.get("/health", (req: Request, res: Response) => {
 	res.status(200).send("Ok");
 });
 
