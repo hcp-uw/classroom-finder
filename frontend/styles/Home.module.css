@@ -89,12 +89,12 @@
 }
 
 .form {
-  font-size: 30px; 
+  font-size: 30px;
 }
 
 .formbox {
   width: 80%;
-  height: 40px;  
+  height: 40px;
   color: black;
   font-size: 30px;
   background-color: rgb(132, 108, 151);
@@ -104,11 +104,11 @@
 
 .formboxsmall {
   width: 50px;
-  height: 40px;  
+  height: 40px;
   color: black;
   font-size: 30px;
   background-color: rgb(132, 108, 151);
-  margin-right: 4px; 
+  margin-right: 4px;
   border-style: solid;
   border-color: black;
 }
@@ -136,6 +136,10 @@
   margin-left: 0.5rem;
 }
 
+.aboutus {
+  text-align: center;
+}
+
 @media (max-width: 1900px) {
   .grid {
     width: 100%;
@@ -154,7 +158,7 @@
   .logo img {
     filter: invert(1);
   }
-  
+
 }
 
 
