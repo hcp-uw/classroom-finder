@@ -14,18 +14,17 @@ export default function Home() {
         <h1 className={styles.title}>
           Husky Classroom Finder App
         </h1>
+        <button href="/posts/first-post" >Info</button>
 
         <div className={styles.grid}>
-          <a href="/posts/first-post" className={styles.card}>
+          <a className={styles.card}>
             <form action="/send-data-here" method="post" className = {styles.form} >
               <label for="first"> Building 1: </label>
               <input className = {styles.formbox} type="text" id="first" name="first" />
-              <button type="submit">Submit</button>
             </form>
             <form action="/send-data-here" method="post" className = {styles.form}>
               <label for="second">Classroom #: </label>
               <input className = {styles.formboxsmall} type="text" id="second" name="second" />
-              <button type="submit">Submit</button>
             </form>
           </a>
         </div>
@@ -35,7 +34,6 @@ export default function Home() {
           <form action="/send-data-here" method="post" className = {styles.form}>
               <label for="second">Building 2: </label>
               <input className = {styles.formbox} type="text" id="second" name="second" />
-              <button type="submit">Submit</button>
             </form>
           </a>
           
@@ -43,7 +41,6 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="/posts/first-post">
-              <button href="/posts/first-post" >Info</button>
           </a>
         </div>
 
