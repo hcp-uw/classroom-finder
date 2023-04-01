@@ -17,7 +17,7 @@ export class Graph {
 	getNode(val: number): NodeC | null {
 		const nodes: IterableIterator<NodeC> = this.inner.keys();
 		for (const node of nodes) {
-			if (node.val == val) {
+			if (node.val === val) {
 				return node;
 			}
 		}
