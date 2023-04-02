@@ -1,20 +1,38 @@
-import Link from 'next/link';
+'use client'
+
+import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Image } from '@chakra-ui/react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
+import { Box } from '@chakra-ui/react'
+import { Input } from '@chakra-ui/react'
+import { Flex, Spacer } from '@chakra-ui/react'
+import { Center, Square, Circle } from '@chakra-ui/react'
 
 
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
-
       <main>
+
         <h1 className={styles.title}>
           Husky Classroom Finder App
         </h1>
-        <button href="/posts/first-post" >Info</button>
+        
+        <Button mt = {5} mb = {5} background = '#684f87' size = 'lg'>
+          <a href = "/posts/info">
+            Info
+          </a>
+        </Button>
+
+        <Box w = "1300px" h = "50px" borderColor = "black" borderWidth='1px' borderRadius='lg' >
+          <Center>          
+          <Input h = "50px" mr = "10px" w = "800px"color = "white" background = "#684f87" placeholder='Building 1 Name' _placeholder = {{color: "#D3D3D3"}}/>
+          <Input h = "50px" w = "400px" color = "white" background = "#684f87" placeholder='Classroom 1 Number' _placeholder = {{color: "#D3D3D3"}}/>
+          
+          </Center>
+        </Box>
+       
 
         <div className={styles.grid}>
           <a className={styles.card}>
@@ -37,17 +55,8 @@ export default function Home() {
             </form>
           </a>
           
-        </div>
-
-        <div className={styles.grid}>
-          <a href="/posts/first-post">
-          </a>
-        </div>
-
-        <div className={styles.grid}>
-          <button>Go</button>
-        </div>
-
+        </div>      
+       
       </main>
 
       <footer>
