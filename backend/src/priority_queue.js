@@ -1,15 +1,18 @@
-// This is a min priority queue using min heap.
-class priority_queue {
+const BuildingItem = require("./building_item.js");
 
+// This is a min priority queue using heap.
+class PriorityQueue {
     constructor() {
         this.heap = [];
     }
 
+    // Adds a building item into priority queue
     add(building_tag, distance) {
-        this.heap.push(new building_item(building_tag, distance));
+        this.heap.push(new BuildingItem(building_tag, distance));
         this.percolateUp(this.size() - 1);
     }
 
+    // Returns the node on top
     peek() {
         if (this.isEmpty()) {
             return null;
@@ -22,7 +25,7 @@ class priority_queue {
         if (this.isEmpty()) {
             return null;
         }
-        let min = this.heap[0];
+        const min = this.heap[0];
         this.heap[0] = this.heap[this.size() - 1];
         this.heap.pop();
         this.percolateDown(0);
@@ -74,8 +77,10 @@ class priority_queue {
     }
 
     swap(a, b) {
-        let x = this.heap[a];
+        const x = this.heap[a];
         this.heap[a] = this.heap[b];
         this.heap[b] = x;
     }
 }
+
+module.exports = PriorityQueue;
