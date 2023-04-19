@@ -1,13 +1,17 @@
 'use client'
 
 import { Button, ButtonGroup } from '@chakra-ui/react'
+import {NextUIProvider} from '@nextui-org/react';
 import { Image } from '@chakra-ui/react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css';
 import { Box } from '@chakra-ui/react'
 import { Input } from '@chakra-ui/react'
 import { Flex, Spacer } from '@chakra-ui/react'
+import { Select } from '@chakra-ui/react'
 import { Center, Square, Circle } from '@chakra-ui/react'
+import { Dropdown } from "@nextui-org/react";
+
 
 
 export default function Home() {
@@ -18,20 +22,12 @@ export default function Home() {
         <h1 className={styles.title}>
           Husky Classroom Finder App
         </h1>
-        
-        <Button mt = {5} mb = {5} background = '#684f87' size = 'lg'>
+
+        <Button w = "100px" mt = {5} mb = {5} background = '#684f87' size = 'lg'>
           <a href = "/posts/info">
             Info
           </a>
         </Button>
-
-        <Box w = "1300px" h = "50px" borderColor = "black" borderWidth='1px' borderRadius='lg' >
-          <Center>          
-          <Input h = "50px" mr = "10px" w = "800px"color = "white" background = "#684f87" placeholder='Building 1 Name' _placeholder = {{color: "#D3D3D3"}}/>
-          <Input h = "50px" w = "400px" color = "white" background = "#684f87" placeholder='Classroom 1 Number' _placeholder = {{color: "#D3D3D3"}}/>
-          
-          </Center>
-        </Box>
        
 
         <div className={styles.grid}>
@@ -52,6 +48,10 @@ export default function Home() {
           <form action="/send-data-here" method="post" className = {styles.form}>
               <label for="second">Building 2: </label>
               <input className = {styles.formbox} type="text" id="second" name="second" />
+            </form>
+            <form action="/send-data-here" method="post" className = {styles.form}>
+              <label for="second">Classroom #: </label>
+              <input className = {styles.formboxsmall} type="text" id="second" name="second" />
             </form>
           </a>
           
