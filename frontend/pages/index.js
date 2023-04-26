@@ -29,14 +29,19 @@ export default function Home() {
           </a>
         </Button>
        
+        <Button w = "100px" mt = {5} mb = {5} background = '#684f87' size = 'lg'>
+          <a href = "/posts/building">
+            Map
+          </a>
+        </Button>
 
         <div className={styles.grid}>
           <a className={styles.card}>
-            <form action="/send-data-here" method="post" className = {styles.form} >
+            <form action="/posts/building" method="post" className = {styles.form} >
               <label for="first"> Building 1: </label>
               <input className = {styles.formbox} type="text" id="first" name="first" />
             </form>
-            <form action="/send-data-here" method="post" className = {styles.form}>
+            <form action="/posts/building" method="post" className = {styles.form}>
               <label for="second">Classroom #: </label>
               <input className = {styles.formboxsmall} type="text" id="second" name="second" />
             </form>
@@ -45,11 +50,11 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a className={styles.card}>
-          <form action="/send-data-here" method="post" className = {styles.form}>
+          <form action="/posts/building" method="post" className = {styles.form}>
               <label for="second">Building 2: </label>
               <input className = {styles.formbox} type="text" id="second" name="second" />
             </form>
-            <form action="/send-data-here" method="post" className = {styles.form}>
+            <form action="/posts/building" method="post" className = {styles.form}>
               <label for="second">Classroom #: </label>
               <input className = {styles.formboxsmall} type="text" id="second" name="second" />
             </form>
