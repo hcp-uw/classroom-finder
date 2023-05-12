@@ -6,7 +6,7 @@ export class PriorityQueue {
     constructor() { this.heap = []; }
 
     // Adds a building item into priority queue
-    public add(element: any, priorityVal: number) {
+    public add(element: string, priorityVal: number) {
         this.heap.push(new PriorityElement(element, priorityVal));
         this.percolateUp(this.size() - 1);
     }

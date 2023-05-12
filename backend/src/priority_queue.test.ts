@@ -1,12 +1,13 @@
 import {PriorityQueue} from "./priority_queue";
-import {PriorityElement} from "./priority_element";
 
 describe("Priority queue tests", () => {
     const test_size = 10000;
     const priority_queue = new PriorityQueue();
 
     function hashCode(s: string){
-        let h = 0, l = s.length, i = 0;
+        let h = 0;
+        let l = s.length;
+        let i = 0;
         if (l > 0)
             while (i < l)
                 h = (h << 5) - h + s.charCodeAt(i++) | 0;
@@ -15,7 +16,7 @@ describe("Priority queue tests", () => {
 
     beforeEach(() => {
         for (let i = 0; i < test_size; i++) {
-            priority_queue.add("tag" + i, Math.abs(hashCode("tag")) + i);
+            priority_queue.add(`tag${i}`, Math.abs(hashCode("tag")) + i);
         }
     });
 
