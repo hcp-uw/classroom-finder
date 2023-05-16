@@ -9,6 +9,8 @@
 ## How to run
 
 ```sh
+npm install
+npm run build
 npm start
 ```
 
@@ -20,5 +22,19 @@ or
 curl localhost:3000
 ```
 
-You should see `Hello World!`
+## Linter & Formatter
+
+```
+npm run lint
+```
+
+```
+npm run fmt
+```
+
+## Deployment
+
+Deployed on http://render.com/
+
+https://classroom-finder-api.onrender.com
 
