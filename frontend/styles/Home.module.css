@@ -17,14 +17,14 @@
   flex: 1;
   padding: 2rem 0;
   border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
 
 .footer a {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
   flex-grow: 1;
 }
 
@@ -40,6 +40,7 @@
 }
 
 .title {
+  color: rgba(72, 8, 91, 0.973);
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
@@ -67,22 +68,50 @@
 
 .grid {
   display: flex;
-  align-items: center;
+  align-items: left;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 800px;
+  max-width: 1800px;
 }
 
 .card {
   margin: 1rem;
+  font-style: bold;
   padding: 1.5rem;
-  text-align: left;
+  text-align: center;
+  align-items: left;
   color: inherit;
+  margin-top: 2rem;
   text-decoration: none;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
-  max-width: 300px;
+  width: 100%;
+}
+
+.form {
+  font-size: 30px;
+}
+
+.formbox {
+  width: 80%;
+  height: 40px;
+  color: black;
+  font-size: 30px;
+  background-color: rgb(132, 108, 151);
+  border-style: solid;
+  border-color: black;
+}
+
+.formboxsmall {
+  width: 50px;
+  height: 40px;
+  color: black;
+  font-size: 30px;
+  background-color: rgb(132, 108, 151);
+  margin-right: 4px;
+  border-style: solid;
+  border-color: black;
 }
 
 .card:hover,
@@ -108,7 +137,11 @@
   margin-left: 0.5rem;
 }
 
-@media (max-width: 600px) {
+.aboutus {
+  text-align: center;
+}
+
+@media (max-width: 1900px) {
   .grid {
     width: 100%;
     flex-direction: column;
@@ -126,4 +159,7 @@
   .logo img {
     filter: invert(1);
   }
+
 }
+
+
